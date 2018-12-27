@@ -95,16 +95,16 @@ class Game:
             if player_character.detect_collision(enemy_0) == True:
                 is_game_over = True
                 did_win = False
-                text = font.render('PORAZKA XD',True, BLACK_COLOR)
-                self.game_screen.blit(text,(250,350))
+                text = font.render('You Lose!',True, BLACK_COLOR)
+                self.game_screen.blit(text,(275,350))
                 pygame.display.update()
                 clock.tick(1)
                 break
             if player_character.detect_collision(enemy_1) == True:
                 is_game_over = True
                 did_win = False
-                text = font.render('PORAZKA XD',True, BLACK_COLOR)
-                self.game_screen.blit(text,(250,350))
+                text = font.render('You Lose!',True, BLACK_COLOR)
+                self.game_screen.blit(text,(275,350))
                 pygame.display.update()
                 clock.tick(1)
                 break
@@ -112,8 +112,8 @@ class Game:
             if player_character.detect_collision(enemy_2) == True:
                 is_game_over = True
                 did_win = False
-                text = font.render('PORAZKA XD',True, BLACK_COLOR)
-                self.game_screen.blit(text,(250,350))
+                text = font.render('You Lose!',True, BLACK_COLOR)
+                self.game_screen.blit(text,(275,350))
                 pygame.display.update()
                 clock.tick(1)
                 break
@@ -121,8 +121,8 @@ class Game:
             if player_character.detect_collision(treasure) == True:
                 is_game_over = True
                 did_win = True
-                text = font.render('izi',True, BLACK_COLOR)
-                self.game_screen.blit(text,(375,350))
+                text = font.render('You Win !',True, BLACK_COLOR)
+                self.game_screen.blit(text,(275,350))
                 pygame.display.update()
                 clock.tick(1)
                 break
