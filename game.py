@@ -1,7 +1,7 @@
 import pygame
 
 pygame.font.init()
-font = pygame.font.SysFont('comicsans', 75)
+font = pygame.font.SysFont('comicsans', 75) #halo
     
 pygame.init()
 
